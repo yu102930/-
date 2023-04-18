@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        .myli{
+            color: red;
+        }
+        .myli2{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--<ul id="t1">-->
+<!--    <li>A</li>-->
+<!--    <li>B</li>-->
+<!--    <li>C</li>-->
+<!--</ul>-->
+
+<!--<ul id="t2">-->
+<!--    <li class="myli2">A</li>-->
+<!--    <li class="myli2">B</li>-->
+<!--    <li class="myli2">C</li>-->
+<!--</ul>-->
+
+<ul id="t3">
+    <button id="btn1-1">1-1</button>
+</ul>
+<!--js-->
+<script src="https://code.jquery.com/jquery-3.6.4.js" ></script>
+<script type="text/javascript">
+    $(function() {
+        console.log( "ready!" );
+        // $("#t1>li").addClass("myli");
+        // $("#t2>li").removeClass("myli2").addClass("myli");
+        // $("#t2>li").removeClass("myli2").addClass("myli");
+        //
+        // $("#t1").empty();
+        // for (var i=0;i<10;i++) {
+        //      var cls = 'myli'
+        //     if (i%3==0){cls= 'myli2'}
+        //     $("#t1").append("<li class="+cls+">"+i+"</li>");
+        // }
+
+       // btnOnclick();
+    //     $("#btn1-1").bind("click",btnOnclick);
+    //     $("#btn1-1").hover(btnOnHoverIn,btnOnHoverOut);
+
+        $("#t3").empty();
+        for (var i=0;i<7;i++){
+            for(var j=0;j<4;j++){
+                $("#t3").append("<button class='btn btn-success m-4'>"+(i+1)+"-"+(j+1)+"</button>");
+            }
+            $("#t3").append("<br/>")
+        }
+    });
+    //
+    // function btnOnclick(){
+    //     console.log("in");
+    // }
+    //
+    // function btnOnHoverIn(){
+    //     console.log("off In");
+    // }
+    //
+    // function btnOnHoverOut(){
+    //     console.log("off Out");
+    // }
+</script>
+</body>
+</html>
